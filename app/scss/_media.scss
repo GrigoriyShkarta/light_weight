@@ -1,0 +1,334 @@
+@media (min-width: 319px) and (max-width: 426px){
+    .main{
+        width: 386px;
+    }
+    .header{ 
+        &__container{
+           width: 100%;
+           padding: 0 26px 0 39px ; 
+        }
+        &__button{
+            display: none;
+        }
+        &__burger{
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 16px;
+        }
+        &__burger span{
+            position: absolute;
+            background-color: black;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            top: 7px;
+        }
+        &__burger:before,
+        &__burger:after{
+            content: '';
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+        }
+        &__burger:before{
+            top: 0;
+        }
+        &__burger:after{
+            bottom: 0;
+        }
+        .header__burger.open-menu span {
+            opacity:0; 
+            transition: 0.5s; 
+        }
+        .header__burger.open-menu:before {
+            transform: rotate(38deg);
+            top: 6px;
+            transition: 0.4s;
+        }
+        .header__burger.open-menu:after {
+            transform: rotate(-39deg);
+            bottom: 9px;
+            transition: 0.4s;
+        } 
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        background: rgb(245, 246, 246);
+        box-shadow: #ccc;
+        width: 100%;
+        top: -100%;
+        transition: all 0.4s ease;
+
+        &__list{
+            display: block;
+            margin-left: 0;
+            padding: 0;
+            width: 100%;
+        }
+    }
+    .menu.open-menu {
+        top: 45px;
+        z-index: 100;
+        width: 107%;
+    }
+    .banner{
+        background-image: linear-gradient( rgba(0, 0, 0, 0.74)), url(../images/mobile/banner.png);
+        &__container{
+            margin-left: 39px;
+        }
+        &__botton{
+            top: -43px;
+        }
+    }
+    .info{
+        width: 100%;
+        // padding-top: 33px;
+        
+        &__title{
+            width: 265px;
+        }
+        &__con{
+            margin-left: 42px;
+            margin-top: 91px;
+        }
+        &__text{
+            width: 226px;
+        }
+        &__dark{
+            margin-left: 30px;
+            width: 281px;
+            height: 53px;
+        }
+    }
+    .benefits{
+        padding: 0 15px;
+        &__title{
+            font-size: 18px;
+        }
+    }
+
+    .block-left{
+        width: auto;
+    }
+    .block-right{
+        margin-left: 0;
+        width: auto;
+    }
+    .block__text{
+        margin-left: 55px;
+        width: 297px;
+        text-align: left;
+    }
+    .number{
+        position: absolute;
+    }
+
+    .small-line{
+        display: none;
+    }
+
+    .text-reg{
+        height: 263px;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.74)), url(../images/mobile/gym_main1.png);
+        &__title{
+            width: 94%;
+        }
+    }
+    .triangle{
+        display: none;
+    }
+    .progress{
+        flex-wrap: wrap;
+        &__bar{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .title-mar{
+        height: 126px;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.6)), url(../images/mobile/gym_main2.png);
+        h2{
+            font-size: 31px;
+            padding-top: 20px;
+            font-size: 36px;
+        }
+    }
+    .blocks{
+        flex-wrap: wrap;
+        
+        width: 258px;
+        position: unset;
+        &__wrap{
+            margin: 71px 49px 79px ;
+        }
+    }
+    .ban1, .ban2{
+        display: none;
+    }
+    .information{
+        background: none;
+    }
+    .cont{
+        &__foto1{
+            width: 177px;
+            height: 129px;
+        }
+        &__foto2{
+            width: 193px;
+            height: 129px;
+        }
+        &__foto3{
+            width: 171px;
+            height: 129px;
+        }
+        &__foto4{
+            width: 193px;
+            height: 129px;
+        }
+        &__text4{
+            width: auto;
+        }
+        &__text p{
+            font-size: 12px;
+        }
+    }
+    .line{
+        display: none;
+    }
+    .pero{
+        display: none;
+    }
+    .reviewsBan{
+        margin-top: 78px;
+    }
+    .review{
+        &__block{
+            margin-left: 6px;
+            margin-bottom: 100px;
+        }
+        &__foto{
+            height: 48px;
+            width: 48px;
+            position: relative;
+            bottom: 12px;
+            left: 80px;
+        }
+        &__text-bg{
+            background-color: #F0F0F0;
+            width: 250px;
+            height: 290px;
+        }
+        &__text{
+            width: 226px;
+        }
+        &__text-rel{
+            width: 229px;
+            margin-top: -91px;
+            margin-left: -41px;
+        }
+        &__text-rel h4{
+            position: relative;
+            top: 19px;
+            left: 53px;
+        }
+        &__text-rel p{
+            position: relative;
+            top: 35px;
+            width: 226px;
+            font-size: 12px;
+        }
+    }
+    .programm{
+        background-image: url(../images/mobile/bg.png);
+        height: 1123px;
+        &__title{
+            font-size: 30px;
+            padding-top: 85px
+        }
+    }
+    .choice{
+        flex-wrap: wrap;
+        margin-top: 8px;
+        margin-left: 87px;
+        &__big{
+            width: 268px;
+            margin: 34px 0;
+        }
+        &__small{
+            width: 197px;
+            height: 251px;
+        }
+        &__big{
+            width: 197px;
+            height: 251px;
+        }
+        &__title{
+            font-size: 18px;
+            margin-top: 16px;
+        }
+        &__text{
+            width: 145px;
+            margin: 19px auto -12px
+        }
+        &__small-btn{
+            width: 119px;
+            height: 27px;
+            font-size: 10px;
+        }
+        &__small-btn-r{
+            margin-top: 21px;
+        }
+        &__big-text{
+            width: 145px;
+            margin: 19px auto -12px
+        }
+        &__big-btn{
+            width: 119px;
+            height: 27px;
+            font-size: 10px;
+            margin-top: 28px;
+        }
+    }
+    .leading{
+        &__content{
+            position: relative;
+            bottom: 79px;
+        }
+        &__image{
+            width: 157px;
+            height: 183px;
+        }
+        &__info-title{
+            line-height: 28px;
+            width: 184px;
+            font-size: 24px;
+        }
+        &__info-light{
+            width: 228px;
+        }
+        &__info-light-wrap{
+            position: relative;
+            top: 20px;
+            right: 50px;
+        }
+        &__info-light-text{
+            font-size: 12px;
+            padding: 10px 14px 6px;
+        }
+        &__info-flow{
+            left: -31px;
+        }
+        &__who{
+            font-size: 14px;
+            bottom: 0;
+            right: 142px;
+        }
+    }
+}
